@@ -16,22 +16,36 @@ The goal is to provide personalized, data-driven guidance to help users confiden
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/skillsight.git
+git clone https://github.com/sadac1/skillsight.git
 cd skillsight
 ```
-### 2. Create a virtual environment
+
+### 2. Install correct Python version
+
+```bash
+brew install pyenv
+pyenv install 3.10.13
+pyenv local 3.10.13  # setting it locally for this project
+```
+
+To verify: 
+```bash
+python --version
+```
+
+### 3. Create a virtual environment
 
 ```bash
 python3 -m venv skillsight-env
 source skillsight-env/bin/activate  # on macOS/Linux
 ```
 
-### 3. Install dependencies
+### 4. Install dependencies
 ```bash
 pip install -r backend/requirements.txt
 ```
 
-### 4. Run the backend (not yet built so skip)
+### 5. Run the backend (not yet built so skip)
 ```bash
 uvicorn main:app --reload
 ```
