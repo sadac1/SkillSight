@@ -31,7 +31,7 @@ source skillsight-env/bin/activate  # on macOS/Linux
 pip install -r backend/requirements.txt
 ```
 
-### 4. Run the backend (once built)
+### 4. Run the backend (not yet built so skip)
 ```bash
 uvicorn main:app --reload
 ```
